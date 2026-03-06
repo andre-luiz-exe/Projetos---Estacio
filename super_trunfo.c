@@ -52,6 +52,7 @@ int main(){
 
     //Calculando o Super Poder da Carta1.
     super_poder1 = (double) populacao1 + area1 + pib1 + ponto_turismo1 + pib_per1 + densidade1;
+    printf("Super Poder: %.2lf", super_poder1);
 
     printf("\n");
 
@@ -90,6 +91,11 @@ int main(){
     pib_per2 = (float) (pib2 / populacao2) * 1000; //Multipliquei por 1000 pois, ao digitar o PIB e a população em valor inteiro (sem pontos ou vírgulas) o resultado do PIB per Capita sairia incorreto.
     printf("O PIB per Capita é: R$%.2f \n", pib_per2);
 
+    
+    //Calculando o Super Poder da Carta2.
+    super_poder2 = (double) populacao2 + area2 + pib2 + ponto_turismo2 + pib_per2 + densidade2;
+    printf("Super Poder: %.2lf", super_poder2);
+
     printf("\n");
 
     //Comparando os atributos das cartas.
@@ -104,9 +110,6 @@ int main(){
     } else {
         printf("Empate!");
     }
-
-    //Calculando o Super Poder da Carta2.
-    super_poder2 = (double) populacao2 + area2 + pib2 + ponto_turismo2 + pib_per2 + densidade2;
     
     //Finalização do Programa.
     return 0;
